@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "GU8mtqI7VT4Rn8U5Du2s/w/pXlEHDWExQkhBdZewSbzTH4Dxtd+gR1z5e6z88N4+GsSBv9vrdgxiHXt2yvd7Bg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\matit\\OneDrive\\Escritorio\\TPsDS\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\matit\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\matit\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.4.0\\fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+    "C:\\Users\\matit\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.4.0\\fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
+    "C:\\Users\\matit\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
