@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matit\\OneDrive\\Escritorio\\TPsDS\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj": {}
+    "C:\\Users\\matit\\OneDrive\\Escritorio\\DdSTPs\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matit\\OneDrive\\Escritorio\\TPsDS\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj": {
+    "C:\\Users\\matit\\OneDrive\\Escritorio\\DdSTPs\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matit\\OneDrive\\Escritorio\\TPsDS\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj",
+        "projectUniqueName": "C:\\Users\\matit\\OneDrive\\Escritorio\\DdSTPs\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj",
         "projectName": "CirculoDeSangre",
-        "projectPath": "C:\\Users\\matit\\OneDrive\\Escritorio\\TPsDS\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj",
+        "projectPath": "C:\\Users\\matit\\OneDrive\\Escritorio\\DdSTPs\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj",
         "packagesPath": "C:\\Users\\matit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matit\\OneDrive\\Escritorio\\TPsDS\\CirculoDeSangre\\CirculoDeSangre\\obj\\",
+        "outputPath": "C:\\Users\\matit\\OneDrive\\Escritorio\\DdSTPs\\CirculoDeSangre\\CirculoDeSangre\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

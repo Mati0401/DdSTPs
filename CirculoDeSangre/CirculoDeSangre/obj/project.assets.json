@@ -5,10 +5,14 @@
       "FluentValidation/10.4.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/FluentValidation.dll": {}
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/FluentValidation.dll": {}
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FluentValidation.AspNetCore/10.4.0": {
@@ -18,10 +22,14 @@
           "FluentValidation.DependencyInjectionExtensions": "10.4.0"
         },
         "compile": {
-          "lib/net6.0/FluentValidation.AspNetCore.dll": {}
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/FluentValidation.AspNetCore.dll": {}
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "related": ".xml"
+          }
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -34,19 +42,27 @@
           "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
         },
         "compile": {
-          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -135,11 +151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matit\\OneDrive\\Escritorio\\TPsDS\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj",
+      "projectUniqueName": "C:\\Users\\matit\\OneDrive\\Escritorio\\DdSTPs\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj",
       "projectName": "CirculoDeSangre",
-      "projectPath": "C:\\Users\\matit\\OneDrive\\Escritorio\\TPsDS\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj",
+      "projectPath": "C:\\Users\\matit\\OneDrive\\Escritorio\\DdSTPs\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj",
       "packagesPath": "C:\\Users\\matit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matit\\OneDrive\\Escritorio\\TPsDS\\CirculoDeSangre\\CirculoDeSangre\\obj\\",
+      "outputPath": "C:\\Users\\matit\\OneDrive\\Escritorio\\DdSTPs\\CirculoDeSangre\\CirculoDeSangre\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\matit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -183,7 +199,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -192,7 +209,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

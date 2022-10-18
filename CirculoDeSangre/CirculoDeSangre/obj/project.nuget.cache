@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GU8mtqI7VT4Rn8U5Du2s/w/pXlEHDWExQkhBdZewSbzTH4Dxtd+gR1z5e6z88N4+GsSBv9vrdgxiHXt2yvd7Bg==",
+  "dgSpecHash": "JvYMZZovl4ij0HilNLurC9WUFbUJ+5hHLop7OdJFUptkJi+NJnUgX0vyBcT0gJiM0fDOF5GVQX9oSPYj7TNcjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matit\\OneDrive\\Escritorio\\TPsDS\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj",
+  "projectFilePath": "C:\\Users\\matit\\OneDrive\\Escritorio\\DdSTPs\\CirculoDeSangre\\CirculoDeSangre\\CirculoDeSangre.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matit\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
     "C:\\Users\\matit\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.4.0\\fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
