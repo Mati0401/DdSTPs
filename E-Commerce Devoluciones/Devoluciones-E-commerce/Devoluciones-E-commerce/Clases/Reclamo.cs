@@ -9,22 +9,22 @@ namespace Devoluciones_E_commerce
 {
     internal class Reclamo
     {
-        private int idReclamo;
-        private string fecha;
-        private string tipo;
-        private string motivo;
-        private string descripcion;
-        private string estadoReclamo;
-        private string idCompra;
+        static private int idReclamo;
+        static private string fecha;
+        static private string tipo;
+        static private string motivo;
+        static private string descripcion;
+        static private string estadoReclamo;
+        static private int idCompra;
 
 
-        public int IdReclamo { get => idReclamo; set => idReclamo = value; }
-        public string Fecha { get => fecha; set => fecha = value; }
-        public string Motivo { get => motivo; set => motivo = value; }
-        public string Tipo { get => tipo; set => tipo = value; }
-        public string Descripcion { get => descripcion; set => descripcion = value; }
-        public string EstadoReclamo { get => estadoReclamo; set => estadoReclamo = value; } // APROBADO / DESAPROBADO / EN EVALUCACIÓN
-        public string IdCompra { get => idCompra; set => idCompra = value; }
+        static public int IdReclamo { get => idReclamo; set => idReclamo = value; }
+        static public string Fecha { get => fecha; set => fecha = value; }
+        static public string Motivo { get => motivo; set => motivo = value; }
+        static public string Tipo { get => tipo; set => tipo = value; }
+        static public string Descripcion { get => descripcion; set => descripcion = value; }
+        static public string EstadoReclamo { get => estadoReclamo; set => estadoReclamo = value; } // APROBADO / DESAPROBADO / EN EVALUCACIÓN
+        static public int IdCompra { get => idCompra; set => idCompra = value; }
 
 
         public Reclamo() { }
@@ -44,6 +44,7 @@ namespace Devoluciones_E_commerce
 
             conexion.Close();
         }
+
 
         public int GenerarCodigoDeReclamo()
         {

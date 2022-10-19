@@ -49,12 +49,12 @@ namespace Devoluciones_E_commerce
 
         }
 
-        public DateTime Fecha;
+        // ATRIBUTOS DE COMPRA
+        public int IdProducto;
         public string NombreDelProducto;
+        public DateTime Fecha;
         public string Estado;
         public double PrecioDelProducto;
-        public int IdCompra;
-        public int IdProducto;
         public double PrecioDelEnvio;
         public string MetodoDePago;
         public string Caracteristicas;
@@ -62,7 +62,7 @@ namespace Devoluciones_E_commerce
         private void dgvCompras_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            IdCompra = Convert.ToInt32(this.dgvCompras.SelectedRows[0].Cells[0].Value);
+            Reclamo.IdCompra = Convert.ToInt32(this.dgvCompras.SelectedRows[0].Cells[0].Value);
             IdProducto = Convert.ToInt32(this.dgvCompras.SelectedRows[0].Cells[1].Value);
             Fecha = Convert.ToDateTime(this.dgvCompras.SelectedRows[0].Cells[3].Value);
             NombreDelProducto = Convert.ToString(this.dgvCompras.SelectedRows[0].Cells[2].Value);
@@ -79,7 +79,7 @@ namespace Devoluciones_E_commerce
             detalleDeCompra.txtNombreDelProducto.Text = NombreDelProducto;
             detalleDeCompra.txtFecha.Text = Fecha.ToShortDateString();
             detalleDeCompra.txtPrecioProducto.Text = "$ " + PrecioDelProducto.ToString();
-            detalleDeCompra.txtIdCompra.Text = IdCompra.ToString();
+            detalleDeCompra.txtIdCompra.Text = Reclamo.IdCompra.ToString();
             detalleDeCompra.txtEnvio.Text = "$ " + PrecioDelEnvio.ToString();
             detalleDeCompra.txtMetodoDePago.Text = MetodoDePago;
             detalleDeCompra.txtCaracteristicas.Text = Caracteristicas;

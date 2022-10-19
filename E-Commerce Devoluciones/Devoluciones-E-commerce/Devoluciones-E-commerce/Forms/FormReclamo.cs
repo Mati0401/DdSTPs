@@ -32,14 +32,11 @@ namespace Devoluciones_E_commerce
 
         private void btnCargarReclamo_Click(object sender, EventArgs e)
         {
-
             Reclamo reclamo = new Reclamo();
 
-
-            reclamo.Tipo = cboTipo.Text;
-            reclamo.Motivo = cboMotivo.Text;
-            reclamo.Descripcion = txtDescripcion.Text;
-            //reclamo.IdCompra = ?;
+            Reclamo.Tipo = cboTipo.Text;
+            Reclamo.Motivo = cboMotivo.Text;
+            Reclamo.Descripcion = txtDescripcion.Text;
 
             reclamo.NuevoReclamo(conexion);
 
