@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VdNM2wd8IIbWKgszuBkYeswnUgRxwrfewy2fMQFObnmKPpE1RibRYA1zHIg6UQTEF94kL0l373vm60EM4VeTxA==",
+  "dgSpecHash": "ryajxer0QiKNEXeWWH/W0EJy1vnatje8DmoU5L0RSLzneIKnfsh1GLAeM7+RZOV3AyuDpINc6Vkts1CoYRcryQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matit\\OneDrive\\Escritorio\\Devoluciones-E-commerce\\Devoluciones-E-commerce\\Devoluciones-E-commerce.csproj",
+  "projectFilePath": "C:\\Users\\matit\\OneDrive\\Escritorio\\DdSTPs\\E-Commerce Devoluciones\\Devoluciones-E-commerce\\Devoluciones-E-commerce\\Devoluciones-E-commerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matit\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\matit\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
