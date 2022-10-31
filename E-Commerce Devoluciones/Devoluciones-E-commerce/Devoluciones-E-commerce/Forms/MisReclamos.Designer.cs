@@ -1,4 +1,4 @@
-﻿namespace Devoluciones_E_commerce.Forms
+﻿namespace Devoluciones_E_commerce
 {
     partial class MisReclamos
     {
@@ -61,6 +61,7 @@
             // 
             // dgvReclamos
             // 
+            this.dgvReclamos.AllowUserToAddRows = false;
             this.dgvReclamos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvReclamos.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dgvReclamos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -72,6 +73,7 @@
             this.dgvReclamos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvReclamos.Size = new System.Drawing.Size(703, 302);
             this.dgvReclamos.TabIndex = 30;
+            this.dgvReclamos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReclamos_CellDoubleClick);
             // 
             // label1
             // 

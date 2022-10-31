@@ -1,5 +1,8 @@
 using System.Data;
 using System.Data.SqlClient;
+using FluentValidation;
+using FluentValidation.Results;
+using System.Linq;
 
 namespace Devoluciones_E_commerce
 {
@@ -12,35 +15,47 @@ namespace Devoluciones_E_commerce
 
         }
 
-        private void btnCargarImagenes_Click(object sender, EventArgs e)
-        {
-            /*try
-            {
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                {
-                    string imagen = openFileDialog1.FileName;
-                    pictureBox1.Image = Image.FromFile(imagen);
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("El archivo seleccionados no es un tipo de imagen válido");
-            }*/
-        }
-
         private SqlConnection conexion = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\matit\OneDrive\Escritorio\Devoluciones-E-commerce\Devoluciones-E-commerce\Base de Datos\DatabaseReclamos.mdf;Integrated Security = True");
 
         private void btnCargarReclamo_Click(object sender, EventArgs e)
         {
             Reclamo reclamo = new Reclamo();
 
-            Reclamo.Tipo = cboTipo.Text;
-            Reclamo.Motivo = cboMotivo.Text;
-            Reclamo.Descripcion = txtDescripcion.Text;
+            reclamo.Tipo = cboTipo.Text;
+            reclamo.Motivo = cboMotivo.Text;
+            reclamo.Descripcion = txtDescripcion.Text;
 
-            reclamo.NuevoReclamo(conexion);
+            var validarReclamo = new ValidarReclamo();
 
-            MessageBox.Show("El reclamo ha sido registrado exitosamente.");
+            ValidationResult result = validarReclamo.Validate(reclamo);
+
+            string errores = "";
+
+            if (result.IsValid)
+            {
+
+                reclamo.CargarNuevoReclamo(conexion);
+
+                MessageBox.Show("El reclamo ha sido registrado exitosamente.");
+
+                MisReclamos misReclamos = new MisReclamos();
+                misReclamos.Show();
+                this.Hide();
+
+            }
+            else
+            {
+
+                foreach (var error in result.Errors)
+                {
+
+                    errores += error.ErrorMessage + Environment.NewLine;
+
+                }
+
+                MessageBox.Show(errores);
+
+            }
 
         }
 

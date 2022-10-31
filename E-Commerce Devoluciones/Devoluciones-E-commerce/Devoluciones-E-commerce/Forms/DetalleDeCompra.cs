@@ -30,10 +30,23 @@ namespace Devoluciones_E_commerce
 
         private void btnHacerReclamo_Click(object sender, EventArgs e)
         {
+            CompraTieneReclamo();
 
-            FormReclamo formReclamo = new FormReclamo();
-            formReclamo.ShowDialog();
-            this.Hide();
+            if (YaExisteReclamoParaEstaCompra)
+            {
+
+                MessageBox.Show("Esta compra ya tiene un reclamo realizado.");
+                btnHacerReclamo.Visible = false; 
+
+            }
+            else
+            {
+
+                FormReclamo formReclamo = new FormReclamo();
+                formReclamo.ShowDialog();
+                this.Hide();
+
+            }
 
         }
 
@@ -43,6 +56,35 @@ namespace Devoluciones_E_commerce
             MisCompras misCompras = new MisCompras();
             misCompras.ShowDialog();
             this.Hide();
+
+        }
+
+        bool YaExisteReclamoParaEstaCompra = false;
+
+        public bool CompraTieneReclamo()
+        {
+
+            int IdCompraParaValidar = Reclamo.IdCompra;
+
+            string consulta = "SELECT * FROM Reclamo WHERE IdCompra = " + IdCompraParaValidar;
+
+            conexion.Open();
+
+            SqlDataAdapter adapter = new SqlDataAdapter(consulta, conexion);
+
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+
+            if (dt.Rows.Count >= 1)
+            {
+
+                YaExisteReclamoParaEstaCompra = true;
+
+            }
+
+            conexion.Close();
+
+            return YaExisteReclamoParaEstaCompra;
 
         }
 

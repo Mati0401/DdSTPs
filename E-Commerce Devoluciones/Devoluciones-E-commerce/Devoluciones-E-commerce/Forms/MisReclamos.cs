@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace Devoluciones_E_commerce.Forms
+namespace Devoluciones_E_commerce
 {
     public partial class MisReclamos : Form
     {
@@ -33,6 +33,35 @@ namespace Devoluciones_E_commerce.Forms
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             dgvReclamos.DataSource = dt;
+
+            dgvReclamos.Columns[7].Visible = false;
+            dgvReclamos.Columns[8].Visible = false;
+            dgvReclamos.Columns[9].Visible = false;
+        }
+
+        public static string EstadoDelTicketL;
+        public static DateTime FechaDeAperturaL;
+        public static int IdReclamoL;
+        public static DateTime FechaDeCierreL;
+        public static DateTime FechaDeUltimaActualizacionL;
+        public static string DescripcionDelCierreL;
+        public static string TipoL;
+
+        private void dgvReclamos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            IdReclamoL = Convert.ToInt32(this.dgvReclamos.SelectedRows[0].Cells[0].Value);
+            FechaDeAperturaL = Convert.ToDateTime(this.dgvReclamos.SelectedRows[0].Cells[1].Value);
+            EstadoDelTicketL = Convert.ToString(this.dgvReclamos.SelectedRows[0].Cells[6].Value);
+            TipoL = Convert.ToString(this.dgvReclamos.SelectedRows[0].Cells[3].Value);
+            FechaDeUltimaActualizacionL = Convert.ToDateTime(this.dgvReclamos.SelectedRows[0].Cells[7].Value);
+            FechaDeCierreL = Convert.ToDateTime(this.dgvReclamos.SelectedRows[0].Cells[8].Value);
+            DescripcionDelCierreL = Convert.ToString(this.dgvReclamos.SelectedRows[0].Cells[9].Value);
+
+            FormTicket formTicket = new FormTicket();
+            formTicket.Show();
+            this.Hide();
+
         }
     }
 }

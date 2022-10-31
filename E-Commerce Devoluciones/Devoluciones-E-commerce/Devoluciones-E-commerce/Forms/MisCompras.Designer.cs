@@ -71,6 +71,7 @@
             // 
             // dgvCompras
             // 
+            this.dgvCompras.AllowUserToAddRows = false;
             this.dgvCompras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCompras.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dgvCompras.Location = new System.Drawing.Point(24, 40);

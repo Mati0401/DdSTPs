@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ryajxer0QiKNEXeWWH/W0EJy1vnatje8DmoU5L0RSLzneIKnfsh1GLAeM7+RZOV3AyuDpINc6Vkts1CoYRcryQ==",
+  "dgSpecHash": "BnDHFXdOjiPuHcUuprpyKJ6zgAzBbK5c+RW4Qb/6MGdj0TXJEsn2AeNLh8wKvtu2uci6p5xQ4W6Y6igJHVq3LQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matit\\OneDrive\\Escritorio\\DdSTPs\\E-Commerce Devoluciones\\Devoluciones-E-commerce\\Devoluciones-E-commerce\\Devoluciones-E-commerce.csproj",
+  "projectFilePath": "C:\\Users\\matit\\OneDrive\\Escritorio\\Devoluciones-E-commerce\\Devoluciones-E-commerce\\Devoluciones-E-commerce.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\matit\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Users\\matit\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\matit\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\matit\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\matit\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\matit\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\matit\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

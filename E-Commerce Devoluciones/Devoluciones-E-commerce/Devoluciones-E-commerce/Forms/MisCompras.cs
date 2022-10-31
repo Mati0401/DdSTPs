@@ -33,6 +33,7 @@ namespace Devoluciones_E_commerce
         SqlConnection conexion = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\matit\OneDrive\Escritorio\Devoluciones-E-commerce\Devoluciones-E-commerce\Base de Datos\DatabaseReclamos.mdf;Integrated Security = True");
         private void MisCompras_Load(object sender, EventArgs e)
         {
+
             // Fecha, Nombre del Producto, Estado y Precio del Producto
             string consulta = "SELECT * FROM Compras ORDER BY Fecha DESC";  
             SqlDataAdapter adapter = new SqlDataAdapter(consulta, conexion);
@@ -40,8 +41,6 @@ namespace Devoluciones_E_commerce
             adapter.Fill(dt);
             dgvCompras.DataSource = dt;
 
-
-            dgvCompras.Columns[0].Visible = false;
             dgvCompras.Columns[1].Visible = false;
             dgvCompras.Columns[6].Visible = false;
             dgvCompras.Columns[7].Visible = false;

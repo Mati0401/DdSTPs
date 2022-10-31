@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnHacerReclamo = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
@@ -53,22 +52,13 @@
             this.lblEstadoDeLaCompra = new System.Windows.Forms.Label();
             this.txtEstadoDeLaCompra = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 60);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(168, 138);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(217, 78);
+            this.label1.Location = new System.Drawing.Point(21, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 15);
             this.label1.TabIndex = 1;
@@ -100,7 +90,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(217, 111);
+            this.label2.Location = new System.Drawing.Point(21, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 4;
@@ -110,7 +100,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(218, 134);
+            this.label3.Location = new System.Drawing.Point(22, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 15);
             this.label3.TabIndex = 5;
@@ -120,7 +110,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(217, 164);
+            this.label4.Location = new System.Drawing.Point(21, 165);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 15);
             this.label4.TabIndex = 6;
@@ -140,7 +130,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(563, 48);
+            this.label7.Location = new System.Drawing.Point(286, 76);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 15);
             this.label7.TabIndex = 9;
@@ -150,7 +140,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(501, 84);
+            this.label8.Location = new System.Drawing.Point(224, 112);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(98, 15);
             this.label8.TabIndex = 10;
@@ -171,7 +161,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(217, 146);
+            this.label15.Location = new System.Drawing.Point(21, 147);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(157, 15);
             this.label15.TabIndex = 18;
@@ -181,7 +171,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(501, 63);
+            this.label16.Location = new System.Drawing.Point(224, 91);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(212, 15);
             this.label16.TabIndex = 19;
@@ -191,7 +181,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(217, 93);
+            this.label17.Location = new System.Drawing.Point(21, 94);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(157, 15);
             this.label17.TabIndex = 20;
@@ -200,7 +190,7 @@
             // txtFecha
             // 
             this.txtFecha.BackColor = System.Drawing.SystemColors.Control;
-            this.txtFecha.Location = new System.Drawing.Point(281, 75);
+            this.txtFecha.Location = new System.Drawing.Point(85, 76);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.ReadOnly = true;
             this.txtFecha.Size = new System.Drawing.Size(82, 23);
@@ -210,7 +200,7 @@
             // txtPrecioProducto
             // 
             this.txtPrecioProducto.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPrecioProducto.Location = new System.Drawing.Point(281, 108);
+            this.txtPrecioProducto.Location = new System.Drawing.Point(85, 109);
             this.txtPrecioProducto.Name = "txtPrecioProducto";
             this.txtPrecioProducto.ReadOnly = true;
             this.txtPrecioProducto.Size = new System.Drawing.Size(82, 23);
@@ -220,7 +210,7 @@
             // txtEnvio
             // 
             this.txtEnvio.BackColor = System.Drawing.SystemColors.Control;
-            this.txtEnvio.Location = new System.Drawing.Point(281, 134);
+            this.txtEnvio.Location = new System.Drawing.Point(85, 135);
             this.txtEnvio.Name = "txtEnvio";
             this.txtEnvio.ReadOnly = true;
             this.txtEnvio.Size = new System.Drawing.Size(82, 23);
@@ -230,7 +220,7 @@
             // txtMetodoDePago
             // 
             this.txtMetodoDePago.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMetodoDePago.Location = new System.Drawing.Point(602, 81);
+            this.txtMetodoDePago.Location = new System.Drawing.Point(325, 109);
             this.txtMetodoDePago.Name = "txtMetodoDePago";
             this.txtMetodoDePago.ReadOnly = true;
             this.txtMetodoDePago.Size = new System.Drawing.Size(111, 23);
@@ -240,7 +230,7 @@
             // txtTotal
             // 
             this.txtTotal.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTotal.Location = new System.Drawing.Point(281, 163);
+            this.txtTotal.Location = new System.Drawing.Point(85, 164);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(82, 23);
@@ -280,7 +270,7 @@
             // 
             this.lblEstadoDeLaCompra.AutoSize = true;
             this.lblEstadoDeLaCompra.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblEstadoDeLaCompra.Location = new System.Drawing.Point(542, 146);
+            this.lblEstadoDeLaCompra.Location = new System.Drawing.Point(542, 79);
             this.lblEstadoDeLaCompra.Name = "lblEstadoDeLaCompra";
             this.lblEstadoDeLaCompra.Size = new System.Drawing.Size(118, 15);
             this.lblEstadoDeLaCompra.TabIndex = 29;
@@ -289,7 +279,7 @@
             // txtEstadoDeLaCompra
             // 
             this.txtEstadoDeLaCompra.BackColor = System.Drawing.SystemColors.Control;
-            this.txtEstadoDeLaCompra.Location = new System.Drawing.Point(542, 179);
+            this.txtEstadoDeLaCompra.Location = new System.Drawing.Point(542, 112);
             this.txtEstadoDeLaCompra.Name = "txtEstadoDeLaCompra";
             this.txtEstadoDeLaCompra.ReadOnly = true;
             this.txtEstadoDeLaCompra.Size = new System.Drawing.Size(118, 23);
@@ -300,7 +290,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(501, 161);
+            this.label9.Location = new System.Drawing.Point(501, 94);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(212, 15);
             this.label9.TabIndex = 31;
@@ -336,21 +326,17 @@
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnHacerReclamo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DetalleDeCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DetalleDeCompra";
             this.Load += new System.EventHandler(this.DetalleDeCompra_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private Label label1;
         private Button btnHacerReclamo;
         private Button btnAtras;
