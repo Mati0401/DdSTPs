@@ -15,8 +15,14 @@ namespace Devoluciones_E_commerce
     {
         public FormTicket()
         {
+
             InitializeComponent();
+
         }
+
+
+        SqlConnection conexion = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\matit\OneDrive\Escritorio\Devoluciones-E-commerce\Devoluciones-E-commerce\Base de Datos\DatabaseReclamos.mdf;Integrated Security = True");
+
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -27,15 +33,13 @@ namespace Devoluciones_E_commerce
 
         }
 
+
         int IdReclamoLocal;
         string EstadoReclamoLocal;
         DateTime fechaDeUltimaActualizacion;
         string DescripcionDeCierreLocal;
         DateTime FechaDeCierreLocal;
         string TipoLocal;
-
-        SqlConnection conexion = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\matit\OneDrive\Escritorio\Devoluciones-E-commerce\Devoluciones-E-commerce\Base de Datos\DatabaseReclamos.mdf;Integrated Security = True");
-        
         private void btnActualizarEstado_Click(object sender, EventArgs e)
         {
 
@@ -72,7 +76,6 @@ namespace Devoluciones_E_commerce
                 txtEstadoDelTicket.Text = EstadoReclamoLocal;
                 FechaDeCierreLocal = new DateTime(0001, 01, 01);
             }
-            
             
             string modificarReclamo = "UPDATE Reclamo SET EstadoReclamo = @var1, FechaDeUltimaActualizacion = @var2 ,FechaDeCierre = @var3 , DescripcionDeCierre = @var4 WHERE IdReclamo = @var5";
 
@@ -121,5 +124,6 @@ namespace Devoluciones_E_commerce
             }
 
         }
+
     }
 }

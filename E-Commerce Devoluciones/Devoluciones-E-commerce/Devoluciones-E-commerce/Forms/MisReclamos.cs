@@ -15,19 +15,28 @@ namespace Devoluciones_E_commerce
     {
         public MisReclamos()
         {
+
             InitializeComponent();
+
         }
+
+
+        SqlConnection conexion = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\matit\OneDrive\Escritorio\Devoluciones-E-commerce\Devoluciones-E-commerce\Base de Datos\DatabaseReclamos.mdf;Integrated Security = True");
+
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
+
             InicioUsuario inicio = new InicioUsuario();
             inicio.Show();
             this.Hide();
+
         }
 
-        SqlConnection conexion = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\matit\OneDrive\Escritorio\Devoluciones-E-commerce\Devoluciones-E-commerce\Base de Datos\DatabaseReclamos.mdf;Integrated Security = True");
+
         private void MisReclamos_Load(object sender, EventArgs e)
         {
+
             string consulta = "SELECT * FROM Reclamo ORDER BY Fecha DESC";
             SqlDataAdapter adapter = new SqlDataAdapter(consulta, conexion);
             DataTable dt = new DataTable();
@@ -37,7 +46,9 @@ namespace Devoluciones_E_commerce
             dgvReclamos.Columns[7].Visible = false;
             dgvReclamos.Columns[8].Visible = false;
             dgvReclamos.Columns[9].Visible = false;
+
         }
+
 
         public static string EstadoDelTicketL;
         public static DateTime FechaDeAperturaL;
@@ -46,7 +57,6 @@ namespace Devoluciones_E_commerce
         public static DateTime FechaDeUltimaActualizacionL;
         public static string DescripcionDelCierreL;
         public static string TipoL;
-
         private void dgvReclamos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -63,5 +73,6 @@ namespace Devoluciones_E_commerce
             this.Hide();
 
         }
+
     }
 }

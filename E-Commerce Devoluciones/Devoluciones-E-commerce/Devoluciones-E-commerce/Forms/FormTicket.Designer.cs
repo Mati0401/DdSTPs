@@ -165,6 +165,7 @@
             this.txtDescripcionDelCierre.Location = new System.Drawing.Point(305, 101);
             this.txtDescripcionDelCierre.Multiline = true;
             this.txtDescripcionDelCierre.Name = "txtDescripcionDelCierre";
+            this.txtDescripcionDelCierre.ReadOnly = true;
             this.txtDescripcionDelCierre.Size = new System.Drawing.Size(200, 90);
             this.txtDescripcionDelCierre.TabIndex = 13;
             // 

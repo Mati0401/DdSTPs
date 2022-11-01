@@ -21,6 +21,21 @@ namespace Devoluciones_E_commerce
 
         }
 
+
+        // ATRIBUTOS DE COMPRA
+        public int IdProducto;
+        public string NombreDelProducto;
+        public DateTime Fecha;
+        public string Estado;
+        public double PrecioDelProducto;
+        public double PrecioDelEnvio;
+        public string MetodoDePago;
+        public string Caracteristicas;
+
+
+        SqlConnection conexion = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\matit\OneDrive\Escritorio\Devoluciones-E-commerce\Devoluciones-E-commerce\Base de Datos\DatabaseReclamos.mdf;Integrated Security = True");
+
+
         private void btnAtras_Click(object sender, EventArgs e)
         {
 
@@ -30,7 +45,7 @@ namespace Devoluciones_E_commerce
 
         }
 
-        SqlConnection conexion = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\matit\OneDrive\Escritorio\Devoluciones-E-commerce\Devoluciones-E-commerce\Base de Datos\DatabaseReclamos.mdf;Integrated Security = True");
+
         private void MisCompras_Load(object sender, EventArgs e)
         {
 
@@ -48,15 +63,6 @@ namespace Devoluciones_E_commerce
 
         }
 
-        // ATRIBUTOS DE COMPRA
-        public int IdProducto;
-        public string NombreDelProducto;
-        public DateTime Fecha;
-        public string Estado;
-        public double PrecioDelProducto;
-        public double PrecioDelEnvio;
-        public string MetodoDePago;
-        public string Caracteristicas;
 
         private void dgvCompras_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

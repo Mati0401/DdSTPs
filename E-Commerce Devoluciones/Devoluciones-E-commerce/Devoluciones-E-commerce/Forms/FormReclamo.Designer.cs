@@ -62,6 +62,7 @@
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(157, 23);
             this.cboTipo.TabIndex = 5;
+            this.cboTipo.SelectedIndexChanged += new System.EventHandler(this.cboTipo_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -76,11 +77,6 @@
             // cboMotivo
             // 
             this.cboMotivo.FormattingEnabled = true;
-            this.cboMotivo.Items.AddRange(new object[] {
-            "El producto tiene un problema o está incompleto",
-            "Es diferente de lo que pediste",
-            "Te arrepentiste de comprar el producto",
-            "No llego el producto"});
             this.cboMotivo.Location = new System.Drawing.Point(73, 126);
             this.cboMotivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMotivo.Name = "cboMotivo";

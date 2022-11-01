@@ -18,23 +18,30 @@ namespace Devoluciones_E_commerce
             InitializeComponent();
         }
 
+
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
 
         }
 
+
         private void misComprasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             MisCompras miscompras = new MisCompras();
             miscompras.ShowDialog();
             this.Hide();
+
         }
+
 
         private void misReclamosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             MisReclamos misreclamos = new MisReclamos();
             misreclamos.ShowDialog();
             this.Hide();
+
         }
     }
 }

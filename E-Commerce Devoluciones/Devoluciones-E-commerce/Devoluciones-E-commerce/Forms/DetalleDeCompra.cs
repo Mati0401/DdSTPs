@@ -21,15 +21,19 @@ namespace Devoluciones_E_commerce
 
         }
 
+
         SqlConnection conexion = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\matit\OneDrive\Escritorio\Devoluciones-E-commerce\Devoluciones-E-commerce\Base de Datos\DatabaseReclamos.mdf;Integrated Security = True");
         
+
         private void DetalleDeCompra_Load(object sender, EventArgs e)
         {
             
         }
 
+
         private void btnHacerReclamo_Click(object sender, EventArgs e)
         {
+
             CompraTieneReclamo();
 
             if (YaExisteReclamoParaEstaCompra)
@@ -50,6 +54,7 @@ namespace Devoluciones_E_commerce
 
         }
 
+
         private void btnAtras_Click(object sender, EventArgs e)
         {
 
@@ -59,8 +64,8 @@ namespace Devoluciones_E_commerce
 
         }
 
-        bool YaExisteReclamoParaEstaCompra = false;
 
+        bool YaExisteReclamoParaEstaCompra = false;
         public bool CompraTieneReclamo()
         {
 

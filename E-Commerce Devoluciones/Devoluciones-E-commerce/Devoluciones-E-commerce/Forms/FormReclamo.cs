@@ -15,10 +15,13 @@ namespace Devoluciones_E_commerce
 
         }
 
+
         private SqlConnection conexion = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\matit\OneDrive\Escritorio\Devoluciones-E-commerce\Devoluciones-E-commerce\Base de Datos\DatabaseReclamos.mdf;Integrated Security = True");
+
 
         private void btnCargarReclamo_Click(object sender, EventArgs e)
         {
+
             Reclamo reclamo = new Reclamo();
 
             reclamo.Tipo = cboTipo.Text;
@@ -59,12 +62,36 @@ namespace Devoluciones_E_commerce
 
         }
 
+
         private void btnSalir_Click(object sender, EventArgs e)
         {
 
             InicioUsuario inicio = new InicioUsuario();
             inicio.ShowDialog();
             this.Hide();
+
+        }
+
+
+        private void cboTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (cboTipo.Text == "Sin Entrega")
+            {
+
+                cboMotivo.Items.Clear();
+                cboMotivo.Items.Add("No llego el producto");
+
+            }
+            else
+            {
+
+                cboMotivo.Items.Clear();
+                cboMotivo.Items.Add("El producto tiene un problema o está incompleto"); 
+                cboMotivo.Items.Add("Es diferente de lo que pediste");
+                cboMotivo.Items.Add("Te arrepentiste de comprar el producto");
+
+            }
 
         }
     }

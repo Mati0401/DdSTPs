@@ -10,6 +10,7 @@ namespace Devoluciones_E_commerce
 {
     internal class Reclamo
     {
+
         private int idReclamo;
         private string fecha;
         private string tipo;
@@ -17,6 +18,8 @@ namespace Devoluciones_E_commerce
         private string descripcion;
         private string estadoReclamo;
         static private int idCompra;
+
+
         private string fechaDeUltimaActualizacion;
         private string fechaDeCierre;
         private string descripcionDeCierre;
@@ -29,9 +32,12 @@ namespace Devoluciones_E_commerce
         public string Descripcion { get => descripcion; set => descripcion = value; }
         public string EstadoReclamo { get => estadoReclamo; set => estadoReclamo = value; } // APROBADO / DESAPROBADO / EN EVALUACIÓN
         static public int IdCompra { get => idCompra; set => idCompra = value; }
+
+
         public string FechaDeUltimaActualizacion { get => fechaDeUltimaActualizacion; set => fechaDeUltimaActualizacion = value; }
         public string FechaDeCierre { get => fechaDeCierre; set => fechaDeCierre = value; }
         public string DescripcionDeCierre { get => descripcionDeCierre; set => descripcionDeCierre = value; }
+
 
         public Reclamo() { }
 
@@ -132,6 +138,8 @@ namespace Devoluciones_E_commerce
             }
 
             return DescripcionDeCierre;
+
         }
+
     }
 }
